@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "version": "0.1",
+  "name": "Github story",
+  "short_name": "github-story",
+  "description": "Chrome extension to append ready pull request description template from one bottom.",
+  "homepage_url": "https://github.com/dmytrostriletskyi/github-story",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://github.com/*/pull/*",
+        "https://github.com/*/compare/*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ]
+}
