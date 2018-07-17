@@ -5,14 +5,23 @@
   "short_name": "github-story",
   "description": "Chrome extension to append ready pull request description template from one bottom.",
   "homepage_url": "https://github.com/dmytrostriletskyi/github-story",
+
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "*://github.com/*"
+  ],
+
   "content_scripts": [
     {
-      "matches": [
-        "https://github.com/*/pull/*",
-        "https://github.com/*/compare/*"
-      ],
       "js": [
-        "content.js"
+        "jquery.min.js",
+        "constants.js",
+        "story.js",
+        "main.js"
+      ],
+      "matches": [
+        "*://github.com/*"
       ]
     }
   ]
