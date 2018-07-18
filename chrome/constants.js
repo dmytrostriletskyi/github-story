@@ -37,7 +37,7 @@ Description text.
             xmlns="http://www.w3.org/2000/svg" 
             xmlns:xlink="http://www.w3.org/1999/xlink" 
             width="12pt" height="14pt" viewBox="0 0 12 14" version="1.1"
-            style="padding-top: 3px;>
+            style="padding-top: 2px;>
                 <g id="surface1" >
                 <path style=" 
                 stroke:none;fill-rule:nonzero;fill:rgb(34.509804%,37.647059%,41.176471%);fill-opacity:1;" 
