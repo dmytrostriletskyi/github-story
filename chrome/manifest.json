@@ -3,8 +3,13 @@
   "version": "0.1",
   "name": "Github story",
   "short_name": "github-story",
-  "description": "Chrome extension to append ready pull request description template from one bottom.",
+  "description": "Extension to use pull request description template with a single button click.",
   "homepage_url": "https://github.com/dmytrostriletskyi/github-story",
+
+  "icons": {
+    "16": "images/icon_16.png",
+    "128": "images/icon_128.png"
+  },
 
   "permissions": [
     "webRequest",

@@ -10,18 +10,17 @@ function Constants() {
 - Ticket (task) — 
 
 ### Description
-Description text. 
+Description of the changes..
 
 ![picture_name](picture_url)
 
 ### Implemented
-—
-—
-—
+— Add..
+— Create..
 
 ### References
-- [url_name](url)
-- [url_name](url)
+- Subject — https://github.com
+- Subject — https://github.com
 `;
 
     this.pullRequestDescriptionDomElement = $(
