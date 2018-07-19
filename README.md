@@ -1,6 +1,6 @@
 # Github story
 
-Chrome and Firefox extension to use pull request description template with a single button click.
+Chrome and Firefox extension to use pull request description template with a single button click. [Gihub already allows repository to has pull request template](https://help.github.com/articles/creating-a-pull-request-template-for-your-repository/), but if you contribute to repository without this feature turn turned on, Github story is your way.
 
 ![Github story usage GIF](
 https://user-images.githubusercontent.com/22666467/42901578-98158ace-8ad4-11e8-8b66-4238cb396b30.gif)
@@ -13,9 +13,11 @@ https://user-images.githubusercontent.com/22666467/42901578-98158ace-8ad4-11e8-8
 ## Install from stores
 
 - Chrome web store.
-- Firefox add-ons gallery.
+- [Firefox add-ons gallery](https://addons.mozilla.org/en-US/firefox/addon/github-story/).
 
 ## Install manually
+
+### Chrome
 
 1. Go to [Releases](https://github.com/dmytrostriletskyi/github-story/releases) and download the latest version.
 2. Unzip the folder wherever you'd like.
@@ -23,3 +25,15 @@ https://user-images.githubusercontent.com/22666467/42901578-98158ace-8ad4-11e8-8
 
 ![Install extensions manually](
 https://user-images.githubusercontent.com/1153134/42123174-45ecb064-7c1b-11e8-81fd-9722627af801.png)
+
+## Troubleshootings 
+
+1. Firefox swears page’s settings blocked the loading of script because of `Content Security Policy`:
+
+```javascript
+Content Security Policy: The page’s settings blocked the loading of a resource at self (“script-src”). Source: (function() {
+    var pushState = histor....
+```
+
+Deal with it by refreshing the page and content of the script will be loaded succesfully.
+Github also swears the same, but does not block any resources and you are able to use it in proper way.
